@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import './App.css'
 
 function Counter() {
- 
+
   const [count, setCount] = useState();
 
   return (
     <div className="App">
       <div >
-      <br/>
+        <br />
         <form onChange={e => setCount(e.target.value)}>
           <label for="counter">Number :</label>
-          <input type="number" id="counter" name="counter"/>
+          <input type="number" id="counter" name="counter" />
         </form>
       </div>
-      
+
       <div>
-      <br/>
+        <br />
         <button onClick={() => setCount(count - 1)} className="ui basic red button">
           -1
         </button>
@@ -24,8 +24,8 @@ function Counter() {
           +1
         </button>
       </div>
-      <br/>
-      <p>Le compteur est  à : {count} </p>
+      <br />
+      <h3>Le compteur est  à : {count} </h3>
     </div>
   );
 }
